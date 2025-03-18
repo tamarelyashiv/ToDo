@@ -10,7 +10,6 @@ public partial class ToDoDbContext : DbContext
     public ToDoDbContext()
     {
     }
-
     public ToDoDbContext(DbContextOptions<ToDoDbContext> options)
         : base(options)
     {
@@ -19,7 +18,7 @@ public partial class ToDoDbContext : DbContext
     public virtual DbSet<Item> Items { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySql("server=localhost;database=tododb;user=root;password=Tamar455;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.41-mysql"));
+        => optionsBuilder.UseMySql("server=blyfuvufybvqmrvozp5z-mysql.services.clever-cloud.com;database=blyfuvufybvqmrvozp5z;user=uj84x09emtt39yit;password=WeM5iyt3LcjPEvOWHAfP", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.41-mysql"));
            
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
