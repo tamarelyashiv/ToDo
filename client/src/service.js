@@ -1,8 +1,8 @@
 import axios from 'axios';
 // כתובת url כdefult
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://server-aiuv.onrender.com';
 // כתובת
-const apiUrl = "http://localhost:5165"; 
+const apiUrl = "https://server-aiuv.onrender.com"; 
 
 axios.interceptors.response.use(
   response => response,
